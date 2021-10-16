@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
   }
+  
   .cutie-mare p:first-letter{
     color:#9c082d;
     font-weight: bold;
@@ -17,8 +19,8 @@
     background: rgba(255, 255, 255, 0.973);
     background: linear-gradient(
       to right bottom,
-      rgba(255, 255, 255, 0.815),
-      rgba(89, 125, 177, 0.918)
+      rgba(194, 194, 194, 0.815),
+      rgb(255, 255, 255)
       );
     padding: 30px;
      width: 60%;
@@ -75,7 +77,7 @@
     border-radius: 1.25rem;
     padding:0.5rem ;
     text-align: center;
-    background: #03001dfb;
+    background: #141414fb;
     background: -webkit-linear-gradient(to left, #8f94fb, #4ec8a3);
  }
  .user h3{
@@ -110,7 +112,7 @@ nav .mainMenu li a {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: 'Manrope', sans-serif;
 
 }
@@ -150,13 +152,19 @@ nav .logo {
     
     background: none;
   }
+   .all{
+     display: none;
+   }
+   .all1{
+    display: block;
+  }
   .box {
    
     margin: 20px;
     width: 300px;
     border-radius: 1rem;
     padding:25px;}
-
+    
 .cutie-mare{
   display: block;
   width: 700px;
@@ -193,6 +201,10 @@ nav .logo {
     
     transition:all 0.23s ease-out;
     border-radius: 1rem;
+  }
+  #active1{
+    background: rgba(255, 255, 255, 0.01);
+    color: #a70f42; 
   }
   .jos{
     display: block;
@@ -239,6 +251,11 @@ nav .logo {
   nav .logo{
     display: none;
   }
+  .all1{
+    display: none;
+  }
+ 
+ 
   nav .mainMenu {
       height: 100vh;
       position: fixed;
@@ -249,8 +266,8 @@ nav .logo {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: #0d0927f8;  
-      background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+      background: #0f0f0ff8;  
+      background: -webkit-linear-gradient(to left, #8f94fb, #8b8ebb);
       transition: top 1s ease;
       display: none;
      
@@ -274,7 +291,7 @@ nav .logo {
       font-size: 30px;
       display: inline-block;
       padding: 15px;
-      color: rgba(236, 236, 236, 0.959);
+      color: rgba(255, 255, 255, 0.959);
       text-decoration: none;
   }
   nav .logo{
@@ -314,8 +331,8 @@ nav .logo {
   background: rgba(255, 255, 255, 0.973);
     background: linear-gradient(
       to right bottom,
-      rgba(255, 255, 255, 0.815),
-      rgba(89, 125, 177, 0.918)
+      rgba(194, 194, 194, 0.815),
+      rgb(255, 255, 255)
       );
    padding: 10px;
    width: 100%;
@@ -491,7 +508,7 @@ nav .logo {
   height: 75px;
   line-height: 80px;
   color: rgba(180, 180, 180, 0.7);
-  background: rgb(48, 11, 116);
+  background: rgb(26, 0, 0);
   border-radius: 50%;
   text-align: center;
   text-decoration: none;
@@ -508,7 +525,7 @@ nav .logo {
   /*BACKGROUND-RESPONSIVE*/
   .area{
     background: #0f0149;  
-    background: -webkit-linear-gradient(to left, #8ffbfb, #4ec8b8);  
+    background: linear-gradient(#111111, #962332); 
     width: 100%;
     height:100vh;
     z-index: 1;
@@ -528,7 +545,7 @@ nav .logo {
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(228, 12, 48, 0.336);
+    background: rgba(15, 15, 15, 0.356);
     animation: animate 25s linear infinite;
     bottom: -150px;
     
@@ -629,9 +646,7 @@ nav .logo {
     .clock{
         display: block;
     }
-    .menu-index{
-        display: none;
-    }
+   
    
   .menu-item{
     width: 25%;
@@ -642,7 +657,7 @@ nav .logo {
     width: 100px;
     height: 100px;
     font-size: 90px;
-    background: rgb(48, 11, 116);
+    background: rgb(116, 11, 34);
   
   }
   .ab,.co,.pr,.ph,.ed,.cv,.vo{
@@ -666,4 +681,70 @@ color: rgb(230, 230, 230);
   border: 1px  solid rgb(141, 141, 141);
 
 }
-/* education */
+/* index div */
+.navindex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width:150px;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  z-index: 9999;
+}
+.navindex ul{
+  position: relative;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+ 
+ 
+}
+.navindex ul li{
+  list-style: none;
+  font-size: 1.5em;
+  
+}
+.navindex ul li::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 6em;
+  font-weight: 700;
+  pointer-events: none;
+  opacity: 0;
+  letter-spacing: 20px;
+  transition: 1s;
+  white-space: nowrap;
+}
+.navindex ul li:hover:before{
+
+opacity: 0.05;
+letter-spacing: 20px;
+}
+.navindex ul li a{
+  position: relative;
+  display: inline-block;
+  padding: 6px 15px;
+  text-decoration: none;
+  color: #fff;
+ 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 1;
+  border-radius: 0.75rem;
+}
+.navindex ul:hover li a{
+  opacity: 0;
+}
+.navindex ul li a:hover{
+  transform: scale(1.4);
+  z-index: 1000;
+  background:#7a0d30;
+  opacity: 1;
+}
