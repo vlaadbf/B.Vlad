@@ -247,6 +247,9 @@ nav .logo {
   }
 }
 @media(max-width: 800px){
+  .parent-project{
+    display: none;
+  }
   nav{
     background: none;
   }
@@ -776,3 +779,75 @@ color: rgba(116, 116, 116, 0.877);
 text-shadow: none;
 font-weight: 500;
 }
+/*project-parent*/
+#child-left-project {
+  float:left; 
+  
+  width:25%;
+  height:280px;
+  border-radius: 2rem;
+  text-align: center;
+  
+}
+#child-left-project a,#child-right-project a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+#child-mid-project a{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 25px;
+  text-align: justify;
+  
+}
+#child-mid-project a:hover,#child-left-project a:hover,#child-right-project a:hover{
+color: rgb(175, 175, 175);
+transition: all ease-in-out 0.2s;
+}
+#child-mid-project h2{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 45px;
+  margin-bottom: 20px;
+  
+  
+}
+#child-left-project h2,#child-right-project h2{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#child-mid-project{
+  float:left; 
+  
+  border-radius: 2rem;
+  width:50%;
+  height:280px;
+  text-align: center;
+  
+ 
+}
+#child-right-project{
+  float:right;
+  
+  border-radius: 2rem;
+  width:25%;
+  height:280px;
+  text-align: center;
+  
+}
+.fa-python {color: rgb(7, 7, 7);}
+.fa-globe {color: rgb(7, 7, 7);}
+.fa-code {color: rgb(7, 7, 7);}
+.fa-university {color: rgb(7, 7, 7);}
+.fa-bell {color: rgb(7, 7, 7);}
+.fa-hands-helping {color: rgb(7, 7, 7);}
+.fa-user{color: rgb(245, 245, 245);}
+.fa-lightbulb{color: rgb(245, 245, 245);}
+.fa-hand-holding-heart{color: rgb(245, 245, 245);}
+.fa-file{color: rgb(245, 245, 245);}
+.fa-mobile-alt{color: rgb(245, 245, 245);}
+.fa-graduation-cap{color: rgb(245, 245, 245);}
